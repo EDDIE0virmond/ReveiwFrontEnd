@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para entrar documentos da pasta?");
   if ((nome == "cd")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para entrar em uma pasta. Parabéns você acertou!");
+	window.location="aula10.html";
   }
   else
   {
-    alert("O " + nome +" nao serve! ")
+    alert("O " + nome +" nao serve! ");
+	window.location = "aula9comandos.html";
   }
-  window.location="aula10.html";
 };

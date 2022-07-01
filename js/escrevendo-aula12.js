@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para desfazer um commit?");
   if ((nome == "git revert")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para desfazer um commit. Parabéns você acertou!");
+	window.location="aula12.html";
   }
   else
   {
     alert("O " + nome +" nao serve! ")
+	window.location = "aula12comandos.html";
   }
-  window.location="aula12.html";
 };

@@ -142,10 +142,12 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para clonar o git?");
   if ((nome == "git clone")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para clonar outro repositorio. Parabéns você acertou!");
+	window.location="aula4.html";
   }
   else
   {
-    alert("O" + nome +" nao serve! ")
+    alert("O" + nome +" nao serve! ");
+	window.location = "aula3comandos.html";
+	
   }
-  window.location="aula4.html";
 };

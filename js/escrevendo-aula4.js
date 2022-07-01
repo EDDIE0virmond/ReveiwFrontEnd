@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para commitar o git?");
   if ((nome == "git commit")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para commitar para o git. Parabéns você acertou!");
+	window.location="aula5.html";
   }
   else
   {
-    alert("O" + nome +" nao serve! ")
+    alert("O" + nome +" nao serve! ");
+	window.location = "aula4comandos.html";
   }
-  window.location="aula5.html";
 };

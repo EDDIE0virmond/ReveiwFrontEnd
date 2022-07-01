@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para mandar para o git?");
   if ((nome == "git push")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para mandar para o git. Parabéns você acertou!");
+	window.location="aula6.html";
   }
   else
   {
     alert("O" + nome +" nao serve! ")
+	window.location = "aula5comandos.html";
   }
-  window.location="aula6.html";
 };

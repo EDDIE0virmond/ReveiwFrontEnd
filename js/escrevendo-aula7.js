@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para listar os documentos da pasta?");
   if ((nome == "ls")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para listar uma pasta. Parabéns você acertou!");
+	window.location="aula8.html";
   }
   else
   {
     alert("O " + nome +" nao serve! ")
+	window.location = "aula7comandos.html";
   }
-  window.location="aula8.html";
 };

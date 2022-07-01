@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para criar pastas?");
   if ((nome == "mk dir")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para criar pasta. Parabéns você acertou!");
+	window.location="aula12.html";
   }
   else
   {
-    alert("O " + nome +" nao serve! ")
+    alert("O " + nome +" nao serve! ");
+	window.location = "aula11comandos.html";
   }
-  window.location="aula12.html";
 };

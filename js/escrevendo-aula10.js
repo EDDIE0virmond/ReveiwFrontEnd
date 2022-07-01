@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para verificar a situacao de tal repositorio?");
   if ((nome == "git status")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para visualizar o status. Parabéns você acertou!");
+	window.location="aula11.html";
   }
   else
   {
     alert("O " + nome +" nao serve! ")
+	window.location = "aula10comandos.html";
   }
-  window.location="aula11.html";
 };

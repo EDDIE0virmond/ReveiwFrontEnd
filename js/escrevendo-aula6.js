@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para ramificar o git?");
   if ((nome == "git branch")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para ramifiacr o repositorio. Parabéns você acertou!");
+	window.location="aula7.html";
   }
   else
   {
     alert("O" + nome +" nao serve! ")
+	window.location = "aula6comandos.html"
   }
-  window.location="aula7.html";
 };

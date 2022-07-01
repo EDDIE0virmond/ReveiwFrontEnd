@@ -1,3 +1,4 @@
+var i = 3;
 function toUnicodeVariant(str, variant, flags) {
 
 	const offsets = {
@@ -132,21 +133,40 @@ function toUnicodeVariant(str, variant, flags) {
   }
 	return result
 }
-
-
+//var count = sessionStorage.count;
 if (typeof module === 'object' && module && typeof module.exports === 'object') {
 	module.exports = toUnicodeVariant
 }
 var button = document.querySelector("button");
-
+sessionStorage.count = 0;
 button.onclick = function () {
   var nome = prompt("Qual é o comando para iniciar o git?");
   if ((nome == "git init")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para iniciar o git. Parabéns você acertou!");
+	window.location="aula2.html";
   }
   else
   {
-    alert("O " + nome + ", nao serve!")
-  }
-  window.location="aula2.html";
+	if (typeof(Storage) !== "undefined") {
+		if (sessionStorage.count) {
+		  sessionStorage.count = Number(sessionStorage.count) + 1;
+		} else {
+		  sessionStorage.count = 1;
+		}
+	} else {
+	for(var i = 1;i <10000000;i++);
+	}
+    alert("O " + nome + ", nao serve!");
+	if(Number(sessionStorage.count) == 3)
+	{
+		alert(toUnicodeVariant("Ultima chance para acertar, voce ira retornar para a tela de comeco",'bold sans','bold'));
+		window.location = "index.html";
+		sessionStorage.count = 0;
+	}
+	else
+	{
+		window.location = "aula1comandos.html";
+	}
+
+	}
 };

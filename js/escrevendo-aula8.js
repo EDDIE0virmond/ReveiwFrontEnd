@@ -141,12 +141,13 @@ var button = document.querySelector("button");
 
 button.onclick = function () {
   var nome = prompt("Qual é o comando para sair de uma documento da pasta?");
-  if ((nome == "cd..")) {
+  if ((nome == "cd ..")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para sair de uma pasta. Parabéns você acertou!");
+	window.location="aula9.html";
   }
   else
   {
-    alert("O " + nome +" nao serve! ")
+    alert("O " + nome +" nao serve! ");
+	window.location = "aula8comandos.html";
   }
-  window.location="aula9.html";
 };

@@ -143,10 +143,11 @@ button.onclick = function () {
   var nome = prompt("Qual é o comando para propor o repositorio remoto o git?");
   if ((nome == "git remote")) {
     alert("O " + toUnicodeVariant(nome,'bold sans', 'bold') + ", serve para iniciar o repositorio remoto. Parabéns você acertou!");
+	window.location="aula3.html";
   }
   else
   {
     alert("O" + nome +" nao serve! ")
+	window.location = "aula2comandos.html"
   }
-  window.location="aula3.html";
 };
